@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="./menu.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="oxymy.css">
+    <link rel="stylesheet" type="text/css" href="menu.css">
+  <meta charset="UTF-8">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OXY</title>
+</head>
+
+<body onload="deflt()">
+ 
+<!--header-->
+
+<div class="topnav" id="myTopnav">
+  <a href="oxy.html" class="active">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+</div>
+
+<!-- slider-->
+
+  <div id="slider" class="slider">
+       <figure class="slide-figure">
+
+          <img  class="slide-img"  src="iiitl.jpeg">
+          <img  class="slide-img"  src="the-honest-company-7R1JdEWp4JE-unsplash.jpg">
+          <img  class="slide-img"    src="three.jpg">
+          <img  class="slide-img"    src="veg.jpg">
+
+      </figure>
+         
+  </div>
+
+<!--menu block-->
+
+<div class="main-contaner">
+
+  <div class=" flex flex-1">  <img src="snacks.jpg">  </div>
+  <div class=" flex flex-2">    <img src="snacks.jpg">   </div>
+  <div class=" flex flex-3">      <img src="snacks.jpg">   </div>
+  <div class=" flex flex-4">       <img src="snacks.jpg">    </div>
+
+
+</div>
+
+
+
+
+<!---
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for day..">
+
+<table id="myTable">
+    <tr class="header"> 
+       <th><img src="IIITL.png" width="70px" height="50px"></th> 
+       <th><h3>Break-fast</h3> </th>
+        <th><h3>Lunch</h3> </th>
+         <th><h3>Evening snacks</h3></th>
+         <th><h3>Dinner</h3></th>
+    </tr>
+    <div class="newMenu">
+          
+    <tr id="day_1"> 
+        <td> <h4 >Monday</h4>  </td>
+        <td> <p>Banana,Milk & Tea
+            Methi Parantha & White Matar
+        </p> </td>
+        <td> <p>Kofta Arhar Dal 
+                 Roti,Chawal </p> </td>
+        <td> <p> Tea Samosa</p> </td>
+        <td> <p>Dum Aloo , Palak Urad Dal 
+                 Roti , Chawal
+        </p> </td>
+    </tr>
+    <tr>
+        <td> <h4 id="day-2">Tuesday</h4>  </td>
+        <td> <p>Banana,Milk & Tea
+            Pav Bhaji & Dalhiya
+        </p> </td>
+        <td> <p>Aloo Pyaaz Rajma 
+                 Roti,Chawal </p> </td>
+        <td> <p> Tea Noodles</p> </td>
+        <td> <p>Mix Vegetables , Red Masoor Dal 
+                 Roti , Chawal
+        </p> </td>
+    </tr>
+    <tr>
+        <td> <h4 id="day-3">Wednesday</h4>  </td>
+        <td> <p>Banana,Milk & Tea
+            Uttappam With Sambar & Coconut Chutney
+        </p> </td>
+        <td> <p>Mix Veg Moong Dal 
+                 Roti,Chawal & Raita </p> </td>
+        <td> <p> Tea Black Chana Masala</p> </td>
+        <td> <p>Paneer , Chana  Dal 
+                 Roti , Chawal &Gulab Jamun/Sevaiyaan
+        </p> </td>
+    </tr>
+    <tr>
+        <td> <h4 id="day-4">Thursday</h4>  </td>
+        <td> <p>Banana,Milk & Tea
+            Aloo Parantha+Achaar & Dalhiya
+        </p> </td>
+        <td> <p>Seasonal Vegetable kadhi 
+                 Roti,Chawal </p> </td>
+        <td> <p> Tea Bread Pakora</p> </td>
+        <td> <p>Soya Methi/Sarso Saag 
+                 Arhar Dal 
+                 Roti , Chawal
+        </p> </td>
+    </tr>
+    <tr>
+        <tr>
+            <td> <h4 id="day-5">Friday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Idli With Sambar & Coconut Chutney
+            </p> </td>
+            <td> <p>Chole Bhature 
+                    Chawal & Boondi Raita </p> </td>
+            <td> <p> Tea Biscuit</p> </td>
+            <td> <p>Soya Aloo , Masoor Dal 
+                     Roti , Chawal & Jalebi
+            </p> </td>
+        </tr>
+        <tr>
+            <td> <h4 id="day-6">Saturday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Aloo Poori & Dalhiya
+            </p> </td>
+            <td> <p>Aloo Gajar Matar Masoor Dal 
+                     Roti,Chawal </p> </td>
+            <td> <p> Tea Cutlet</p> </td>
+            <td> <p>Veg Jalfrezi/Thoran 
+                     Arhar Dal 
+                     Roti , Chawal
+            </p> </td>
+        </tr>
+        <tr>
+            <td> <h4 id="day-7">Sunday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Poha Chutney Aloo Sandwich 
+            </p> </td>
+            <td> <p> Vegetable Biryani Dal Makhani 
+                     Tawa Parantha , Raita </p> </td>
+            <td> <p> Tea Dhokla</p> </td>
+            <td> <p>Matar Paneer Mix Dal 
+                     Roti , Chawal Kheer/Custard/Firni
+            </p> </td>
+        </tr>
+          
+    </div>      
+</table>
+<!--
+<div class="menu">
+  <div class="day">
+  </div>
+      <div class="rest">
+  <div class="day1 box"><h2>Monday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Methi Parantha & White Matar</p> 
+   <h3>Lunch</h3><p>Kofta Arhar Dal Roti,Chawal </p> 
+   <h3>Evening snacks</h3><p> Tea Samosa</p> 
+   <h3>Dinner</h3><p>Dum Aloo , Palak Urad Dal Roti , Chawal</p> 
+  </div>
+  
+  <div class="day2 box"><h2>Tuesday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Pav Bhaji & Dalhiya </p>
+    <h3>Lunch</h3><p>Aloo Pyaaz Rajma Roti,Chawal </p> </td>
+    <h3>Evening snacks</h3> <p> Tea Noodles</p>
+    <h3>Dinner</h3><p>Mix Vegetables , Red Masoor Dal Roti , Chawal</p>
+  </div>
+   
+  <div class="day3 box"><h2>Wednesday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Uttappam With Sambar & Coconut Chutney</p> 
+    <h3>Lunch</h3><p>Mix Veg Moong Dal Roti,Chawal & Raita </p>
+    <h3>Evening snacks</h3> <p> Tea Black Chana Masala</p>
+    <h3>Dinner</h3><p>Paneer , Chana  Dal Roti , Chawal &Gulab Jamun/Sevaiyaan</p>
+  </div>
+
+  <div class="day4 box"><h2>Thursday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Aloo Parantha+Achaar & Dalhiya</p>
+    <h3>Lunch</h3><p>Seasonal Vegetable kadhi Roti,Chawal </p>
+    <h3>Evening snacks</h3><p> Tea Bread Pakora</p>
+    <h3>Dinner</h3><p>Soya Methi/Sarso Saag  Arhar Dal Roti , Chawal</p>
+  </div>
+  
+  <div class="day5 box"><h2>Friday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Idli With Sambar & Coconut Chutney</p>
+    <h3>Lunch</h3><p>Chole Bhature Chawal & Boondi Raita </p>
+    <h3>Evening snacks</h3> <p> Tea Biscuit</p>
+    <h3>Dinner</h3><p>Soya Aloo , Masoor Dal Roti , Chawal & Jalebi</p>
+  </div>
+  
+  <div class="day6 box"><h2>Saturday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Aloo Poori & Dalhiya</p>
+    <h3>Lunch</h3><p>Aloo Gajar Matar Masoor Dal Roti,Chawal </p>
+    <h3>Evening snacks</h3> <p> Tea Cutlet</p> 
+    <h3>Dinner</h3><p>Veg Jalfrezi/Thoran Arhar Dal Roti , Chawal</p>
+  </div>
+  
+  <div class="day7 box"><h2>Sunday</h2><h3>Break-fast</h3><p>Banana,Milk & Tea Poha Chutney Aloo Sandwich</p>
+    <h3>Lunch</h3><p> Vegetable Biryani Dal Makhani Tawa Parantha , Raita </p>
+    <h3>Evening snacks</h3><p> Tea Dhokla</p> </td>
+    <h3>Dinner</h3><p>Matar Paneer Mix Dal Roti , Chawal Kheer/Custard/Firni</p>
+  </div>
+</div>
+</div>
+
+-->
+<!--passage block
+
+<h2 class="second_passage_heading"> Advantages of organic food</h2>
+<span class="passage_page">
+  <div class="second_passage_img"> <img src="frut.jpg"> </div>
+  <div class="second_passage"> 
+       <p>
+        Organic farming is an alternative agricultural 
+        system  which  originated  early  in  the  20th 
+        century in reaction to rapidly changing farming
+        practices. Certified organic agriculture accounts
+        for 70 million hectares globally, with over half of
+        that total in Australia.Organic farming continues to
+        be developed by various organizations today. It is 
+        defined by the use of fertilizers of organic origin 
+        such as compost manure, green manure, and bone meal 
+        and places emphasis on techniques such as crop rotation 
+        and companion planting. Biological pest control, mixed 
+        cropping and the fostering of insect predators are 
+        encouraged. Organic standards are designed to allow 
+        the use of naturally occurring substances while prohibiting 
+        or strictly limiting synthetic substances. For instance 
+        naturally occurring pesticides such as pyrethrin and rotenone 
+        are permitted, while synthetic fertilizers and pesticides are 
+        generally prohibited. Synthetic substances that are allowed 
+        include, for example, copper sulfate, elemental sulfur and 
+        Ivermectin. Genetically modified organisms, nanomaterials, 
+        human sewage sludge, plant growth regulators, hormones, and 
+        antibiotic use in livestock husbandry are prohibited. 
+       </p>
+  </div>
+</span>
+-->
+<!--footer-->
+<footer class="footer-distributed">
+ 
+  <div class="footer-left">
+      <img src="IIITL.png">
+    <h3>IIITL<span>MESS</span></h3>
+
+    <p class="footer-links">
+      <a href="oxy.html">Home</a>      
+      
+      <a href="about.html">About</a>
+    </p>
+
+    <p class="footer-company-name"> 2020 IIIT LUCKNOW MESS</p>
+  </div>
+
+  <div class="footer-center">
+    <div>
+        <p><span>IIIT Lucknow Chak Ganjaria, C. G. City</span>Lucknow – 226002</p>
+    </div>
+
+    <div>
+      <p>+91 12-34567899</p>
+    </div>
+    <div>
+      <p><a href="contact@iiitl.ac.in">contact@iiitl.ac.in</a></p>
+    </div>
+  </div>
+  
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>NOTICE BOARD</span>
+      Updated soon</p>
+  </div>
+</footer>
+
+
+</body>
+</html>

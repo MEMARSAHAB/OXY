@@ -1,0 +1,385 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(36, 34, 34);
+}
+
+.topnav a.active {
+  background-color: rgb(20, 175, 196);
+  color: white;
+}
+
+
+
+/*slider css start */
+
+#slider {
+    overflow: hidden;
+    height: 50vh;  
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;  
+}
+
+#slider figure img {
+    width: 20%;
+    height: 50vh;
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .slide-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+}
+
+
+/*menu page css start */
+
+.main-contaner { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 8vh;
+}
+
+.flex {
+  width: 25vw;
+  margin: 3vh;
+} 
+
+.flex img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+}
+
+.flex-1 {
+  min-height: 40vh;
+}
+
+.flex-2 {
+  min-height: 40vh;
+}
+
+.flex-3 {
+  min-height: 40vh;
+}
+
+.flex-4 {
+  min-height: 40vh;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .flex {
+    width: 90%;
+    height: auto;
+  }
+}
+
+
+
+
+
+/*  
+.day{
+    height:30vh;
+    width: 95vw;
+    background-color:rgba(170, 158, 158, 0.2);
+    margin:auto;
+    
+  }
+
+.box{
+    height: 55vh;
+    width: 30vw;
+    background-color: rgba(63, 201, 45, 0.2);
+    // margin:auto; 
+    
+  }
+.rest{
+    padding:5vh 0;
+    display:grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: 60vh 60vh;
+    justify-content: space-evenly;
+    margin:0 auto;
+}
+
+.rest h2 {
+     color: rgb(55, 177, 146);
+     text-align: center;
+}
+
+.rest h3{
+  padding: 1vh;
+  text-align: left;
+  color: rgb(96, 238, 96);
+}
+
+.rest p {
+  padding: 1vh;
+  color: rgb(26, 30, 99);
+}
+*/
+
+ /* passage pages css start 
+
+.passage_page{
+    margin-top: 50px;
+    display: inline-flex;
+    width: 100%;
+    height: 500px;
+}
+
+.second_passage {
+    margin-left: 150px;
+    margin-top: 70px;
+    display: flex;
+    max-width: 40%;
+    max-height: 450px;
+    font-family: fantasy;
+    font-size: px;
+    
+}
+
+.second_passage_img {
+ margin-left: 20px;
+ display: flex;
+ max-width: 40%;
+ max-height: 450px;
+}
+
+.second_passage_heading {
+ display: block;
+ margin-top: 60px;
+ margin-bottom: -50px;
+ margin-left:60%;
+ font-weight: 200;   
+}
+@media (max-width: 880px) {
+	.passage_page {
+		display: block;
+    overflow: hidden;
+
+}
+*/
+/* footer css start */
+
+/* The footer is fixed to the bottom of the page */
+ 
+footer{
+	position: fixed;
+	bottom: 0;
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+  background-color: #237d94;
+  box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+/* The company logo */
+ 
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+ 
+.footer-distributed h3 span{
+	color:  #53e01c;
+}
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #e0d31c;
+	text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
+
+

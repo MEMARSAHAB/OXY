@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IIITL MESS MENU</title>
+</head>
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("myTable");
+      tr = table.getElementsByTagName("tr");
+    
+      // Loop through all table rows, and hide those who don't match the search query
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    }
+    var d = new Date();
+    d = d.getDay();
+    // console.log(d);
+    document.getElementById('day_1').style.display= 'none';
+
+// var obj ={
+//     d1:[1,"Monday","banana","puri","tea","roti"]
+// };
+//     // let day= document.querySelector("#day-" + d).textContent;
+//     var nhtml = '<tr><td><h4 id="day-%d%">%day%</h4></td><td><p>%breakfast%</p></td><td><p>%lunch%</p></td><td><p>%snacks%</p></td><td><p>%dinner%</p></td></tr>';
+//     html = nhtml.replace('%d%',obj.d1[0]);
+    
+//     html =html.replace('%day%',obj.d1[1]);
+//     html= html.replace('%breakfast%',obj.d1[2]);
+//     html= html.replace('%lunch%',obj.d1[3]);
+//     html=html.replace('%snacks%',obj.d1[4]);
+//     html = html.replace('%dinner%',obj.d1[5]);
+//     console.log(html);
+//     var ele ='.newMenu';
+//     document.querySelector(ele).insertAdjacentHTML('beforeend', html);
+//    
+</script>
+
+
+
+<body>
+   
+ <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for day..">
+
+    <table id="myTable">
+        <tr class="header"> 
+           <th><img src="IIITL.png" width="70px" height="50px"></th> 
+           <th><h3>Break-fast</h3> </th>
+            <th><h3>Lunch</h3> </th>
+             <th><h3>Evening snacks</h3></th>
+             <th><h3>Dinner</h3></th>
+        </tr>
+        <div class="newMenu">
+              
+        <tr id="day_1"> 
+            <td> <h4 >Monday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Methi Parantha & White Matar
+            </p> </td>
+            <td> <p>Kofta Arhar Dal 
+                     Roti,Chawal </p> </td>
+            <td> <p> Tea Samosa</p> </td>
+            <td> <p>Dum Aloo , Palak Urad Dal 
+                     Roti , Chawal
+            </p> </td>
+        </tr>
+        <tr>
+            <td> <h4 id="day-2">Tuesday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Pav Bhaji & Dalhiya
+            </p> </td>
+            <td> <p>Aloo Pyaaz Rajma 
+                     Roti,Chawal </p> </td>
+            <td> <p> Tea Noodles</p> </td>
+            <td> <p>Mix Vegetables , Red Masoor Dal 
+                     Roti , Chawal
+            </p> </td>
+        </tr>
+        <tr>
+            <td> <h4 id="day-3">Wednesday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Uttappam With Sambar & Coconut Chutney
+            </p> </td>
+            <td> <p>Mix Veg Moong Dal 
+                     Roti,Chawal & Raita </p> </td>
+            <td> <p> Tea Black Chana Masala</p> </td>
+            <td> <p>Paneer , Chana  Dal 
+                     Roti , Chawal &Gulab Jamun/Sevaiyaan
+            </p> </td>
+        </tr>
+        <tr>
+            <td> <h4 id="day-4">Thursday</h4>  </td>
+            <td> <p>Banana,Milk & Tea
+                Aloo Parantha+Achaar & Dalhiya
+            </p> </td>
+            <td> <p>Seasonal Vegetable kadhi 
+                     Roti,Chawal </p> </td>
+            <td> <p> Tea Bread Pakora</p> </td>
+            <td> <p>Soya Methi/Sarso Saag 
+                     Arhar Dal 
+                     Roti , Chawal
+            </p> </td>
+        </tr>
+        <tr>
+            <tr>
+                <td> <h4 id="day-5">Friday</h4>  </td>
+                <td> <p>Banana,Milk & Tea
+                    Idli With Sambar & Coconut Chutney
+                </p> </td>
+                <td> <p>Chole Bhature 
+                        Chawal & Boondi Raita </p> </td>
+                <td> <p> Tea Biscuit</p> </td>
+                <td> <p>Soya Aloo , Masoor Dal 
+                         Roti , Chawal & Jalebi
+                </p> </td>
+            </tr>
+            <tr>
+                <td> <h4 id="day-6">Saturday</h4>  </td>
+                <td> <p>Banana,Milk & Tea
+                    Aloo Poori & Dalhiya
+                </p> </td>
+                <td> <p>Aloo Gajar Matar Masoor Dal 
+                         Roti,Chawal </p> </td>
+                <td> <p> Tea Cutlet</p> </td>
+                <td> <p>Veg Jalfrezi/Thoran 
+                         Arhar Dal 
+                         Roti , Chawal
+                </p> </td>
+            </tr>
+            <tr>
+                <td> <h4 id="day-7">Sunday</h4>  </td>
+                <td> <p>Banana,Milk & Tea
+                    Poha Chutney Aloo Sandwich 
+                </p> </td>
+                <td> <p> Vegetable Biryani Dal Makhani 
+                         Tawa Parantha , Raita </p> </td>
+                <td> <p> Tea Dhokla</p> </td>
+                <td> <p>Matar Paneer Mix Dal 
+                         Roti , Chawal Kheer/Custard/Firni
+                </p> </td>
+            </tr>
+              
+        </div>      
+    </table>
+
+
+</body>
+</html>
